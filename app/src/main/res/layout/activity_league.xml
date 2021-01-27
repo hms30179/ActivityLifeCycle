@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.LeagueActivity">
+
+    <ImageView
+        android:id="@+id/imgScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desiredleaguebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/swooshlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDesiredLegue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desired League"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        />
+
+    <ToggleButton
+        android:id="@+id/btnMens"
+        style="@style/buttonColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/swoosh_toggle"
+        android:text="Mens"
+        android:textOn="Mens"
+        android:textOff="Mens"
+        android:onClick="onClickbtnMens"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDesiredLegue" />
+
+    <ToggleButton
+        android:id="@+id/btnWomens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Women"
+        android:textOn="Women"
+        android:textOff="Women"
+        android:onClick="onClickbtnWomens"
+        style="@style/buttonColor"
+        android:inputType="textCapCharacters"
+        android:background="@drawable/swoosh_toggle"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMens"/>
+
+    <ToggleButton
+        android:id="@+id/btnCoEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Co-Ed"
+        android:textOn="Co-Ed"
+        android:textOff="Co-Ed"
+        android:onClick="onClickbtnCoEd"
+        style="@style/buttonColor"
+        android:inputType="textCapCharacters"
+        android:background="@drawable/swoosh_toggle"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btnWomens"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <android.widget.Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        style="@style/buttonColor"
+        android:onClick="onClickbtnNext"
+        android:background="@drawable/swoosh_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

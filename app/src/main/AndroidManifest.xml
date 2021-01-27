@@ -8,8 +8,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ActivityLifeCycle">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.ActivityLifeCycle"
+        >
+        <activity android:name=".Controller.TogglingActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".Controller.SkillActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".Controller.BaseActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".Controller.LeagueActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".Controller.WellComeActivity"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

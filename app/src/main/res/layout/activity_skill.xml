@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.SkillActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/beginnerballerbg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+         />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/swooshlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtiam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am :"
+        android:textSize="32sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtiam"
+        android:layout_marginTop="20dp">
+        <ToggleButton
+            android:id="@+id/btnBegginer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="begginerOnCLick"
+            style="@style/buttonColor"
+            android:background="@drawable/swoosh_toggle"
+            android:text="Begginer"
+            android:textOff="Begginer"
+            android:textOn="Begginer"
+            android:minWidth="200dp"
+
+           />
+
+        <ToggleButton
+            android:id="@+id/btnBaller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/buttonColor"
+            android:background="@drawable/swoosh_toggle"
+            android:onClick="ballerOnCLick"
+            android:text="baller"
+            android:textOff="Baller"
+            android:textOn="Baller"
+            android:minWidth="200dp"
+            />
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finishOnCLick"
+        android:text="Finish"
+        style="@style/buttonColor"
+        android:background="@drawable/swoosh_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
